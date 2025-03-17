@@ -17,12 +17,12 @@ If you open up 5 windows with a BlazorWebView control and close all 5 windows, y
     * Android
 
 ## Steps To Reproduce
-* From the MainPage click "Open Blazor Window" button
-* Observe the Blazor Window that comes up and then click the back button at the top
+1. From the MainPage click "Open Blazor Window" button
+2. Observe the Blazor Window that comes up and then click the back button at the top
     * The window should close and the MainPage should be visible
-* Repeat this process as many times as you wish
-* In the Debug Console produce a dump file with .NET Meteor
-* Load up the gcdump file and look for any of the following objects and observe their counts:
+3. Repeat this process as many times as you wish
+4. In the Debug Console produce a dump file with .NET Meteor
+5. Load up the gcdump file and look for any of the following objects and observe their counts:
     * BlazorWebView
     * HelloWorld
     * BlazorWindow
