@@ -9,7 +9,16 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	protected override void OnAppearing()
+	{
+		base.OnAppearing();
+		
+		GC.Collect();
+		GC.WaitForPendingFinalizers();
+		Console.WriteLine("MainPage: OnAppearing.");
+    }
+
+    private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
 

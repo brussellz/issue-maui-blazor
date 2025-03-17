@@ -140,3 +140,5 @@ paket-files/
 .localhistory/
 
 *.Backup.tmp
+
+*.gcdump
